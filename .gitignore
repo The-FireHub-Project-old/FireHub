@@ -21,7 +21,7 @@ storage/logs/debug/*
 storage/sessions/*
 !storage/sessions/.gitkeep
 storage/temp/*
-!stora
+!storage/temp/.gitkeep
 
 vendor/phpdocumentor.phar
 vendor/phpstan.phar
