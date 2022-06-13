@@ -8,3 +8,19 @@ firehub/*
 
 firehub/core/*
 !firehub/core/.gitkeep
+
+# App
+storage/cache/*
+!storage/cache/.gitkeep
+storage/dumps/*
+!storage/dumps/.gitkeep
+storage/logs/*
+!storage/logs/.gitkeep
+storage/logs/debug/*
+!storage/logs/debug/.gitkeep
+storage/sessions/*
+!storage/sessions/.gitkeep
+storage/temp/*
+!storage/temp/.gitkeep
+
+vendor/phpunit.phar
