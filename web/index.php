@@ -14,6 +14,7 @@
  *
  * @version 1.0
  * @version 1.1 Added main FireHub class for bootstrapping.
+ * @version 1.2 Added Kernel enum.
  *
  * @todo Remove ini settings after logger provider is implemented.
  */
@@ -23,10 +24,12 @@ ini_set('display_startup_errors', '1');
 error_reporting(E_ALL);
 
 use FireHub\FireHub;
+use FireHub\Initializers\Enums\Kernel;
 
 /**
  * Let there be light
  */
 require 'phar://'.__DIR__.'/../firehub/core/firehub.phar/firehub.FireHub.php';
+require 'phar://'.__DIR__.'/../firehub/core/firehub.phar/initializers/enums/firehub.Kernel.php';
 
-$firehub = (new FireHub())->boot();
+$firehub = (new FireHub())->boot(Kernel::HTTP);
