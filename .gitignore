@@ -25,4 +25,5 @@ storage/temp/*
 
 vendor/phpdocumentor.phar
 vendor/phpstan.phar
+vendor/phpstan.neon
 vendor/phpunit.phar
